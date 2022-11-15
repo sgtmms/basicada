@@ -1,10 +1,14 @@
 with Ada.Text_IO;
 
 procedure Hello_World is
-begin
+
+
 
    J : Integer := 7;
    K : Integer := 7;
+begin
+
+
    for I in 1..5 loop
       Ada.Text_IO.Put_Line ("Hello Ada World!" & Integer'Image (I));
    end loop;
@@ -12,12 +16,10 @@ begin
    loop
 
       if J mod 2 = 0 then
-         Put_Line ( Integer'Image (J))
-                & " is even");
+         Ada.Text_IO.Put_Line ( Integer'Image (J) & " is even");
       else
-         Put_Line ( Integer'Image (J))
-                & " is odd");
-
+         Ada.Text_IO.Put_Line ( Integer'Image (J) & " is odd");
+      end if;
       --  Exit statement:
       exit when J > 200;
       --        ^ Boolean condition
